@@ -18,10 +18,11 @@ public class TebakNumberSkor {
      */
     public static void main(String[] args) {
         int maxRange = 100;
+        int firstScore = 100;
         Random acak = new Random();
         Scanner input = new Scanner(System.in);
         int numAcak = acak.nextInt(maxRange+1);
-        Tebakan tebak = new Tebakan(numAcak,100);
+        Tebakan tebak = new Tebakan(numAcak,firstScore);
         
         System.out.println("Hai... nama saya Mr. Lappie, saya telah memilih "
             + "sebuah bilangan bulat acak antara 0 s/d 100. Silakan tebak ya!!!\n");
