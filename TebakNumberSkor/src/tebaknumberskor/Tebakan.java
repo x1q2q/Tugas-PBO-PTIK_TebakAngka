@@ -14,7 +14,7 @@ public class Tebakan {
     int numAcak;
     int score;
     int count=5;
-    boolean getStts=true;
+    boolean sttsDone=true;
     
     Tebakan(int angkRandom, int skor){
         this.numAcak = angkRandom;
@@ -23,15 +23,14 @@ public class Tebakan {
     
     void getMsg(int angka){
         this.numTebak=angka;
+        this.hitung();
         if(angka < this.numAcak){
             System.out.println("Hehehe.. Bilangan tebakan anda terlalu kecil \n");
-            this.hitung();
         }else if(angka > this.numAcak){
             System.out.println("Hehehe.. Bilangan tebakan anda terlalu besar \n");
-            this.hitung();
         }else{
             System.out.println("Yeeee... Bilangan tebakan anda BENAR");
-            getStts=false;
+            this.sttsDone=!this.sttsDone;
         }
     }
     void hitung(){

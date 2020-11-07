@@ -26,7 +26,7 @@ public class TebakNumberSkor {
         
         System.out.println("Hai... nama saya Mr. Lappie, saya telah memilih "
             + "sebuah bilangan bulat acak antara 0 s/d 100. Silakan tebak ya!!!\n");
-        while(tebak.getStts){
+        while(tebak.sttsDone){
             System.out.print("Tebakan Anda: ");
             int numInput = input.nextInt();
             tebak.getMsg(numInput);
